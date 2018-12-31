@@ -1,0 +1,99 @@
+.container {
+    //max-width: allows container to decrease if there is not enough space
+    max-width: 140rem;
+    //centers the container inside of the body(parent element)
+    margin: 3rem auto;
+    background-color: var(--color-grey-dark-1);
+    box-shadow: var(--shadow-dark);
+    border: 2px solid var(--color-gold);
+
+    // DESKTOP first media query
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 8rem;
+    background-color: var(--color-white);
+    border-bottom: 3px solid var(--color-gold);
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 10rem;
+    }
+}
+
+.content {
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-2);
+    // Sidebar will take up 12.5% of the content container
+    flex: 0 0 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid var(--color-gold);
+}
+
+.content-view {
+    background-color: var(--color-grey-light-1);
+    flex: 1;
+}
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    font-size: 1.4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+
+}
+
+.blog-post {
+    font-size: 1.4rem;
+    background-color: var(--color-grey-primary);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .05);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.blog-pinned {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

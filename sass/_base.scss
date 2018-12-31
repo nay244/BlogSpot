@@ -1,0 +1,62 @@
+/************************
+*  CSS CUSTOM VARIABLES *
+************************/
+
+// Store CUSTOM CSS VARIABLES in root pseudo class
+:root {
+    --color-grey-light: #FFFCFC;
+    --color-grey-primary: #E6DEDD;
+    --color-grey-dark-1: #BFB1AF;
+    --color-grey-dark-2: #333;
+
+    --color-red-light: #B13A31;
+    --color-red-primary: #8F1D14;
+    --color-red-dark: #3F0500;
+    
+    --color-white: #fff;
+    --color-black: #1B120F;
+    --color-gold: #F89D13;
+
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .15);
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .5);
+    --line: 1px solid var(--color-gold);
+}
+
+//SASS Variable for media query widths
+$bp-largest: 75em; // 1200 px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 1.5;
+    background-image: linear-gradient(to right bottom, 
+        var(--color-red-light), var(--color-red-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <title> BlogSpot </title>
+    </head>
+    <body>
+        <!-- Container will store all content on the page -->
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="BlogSpot Logo" class="logo">
+
+                <!-- Search Bar -->
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Wallpapers">
+                    <button class="search__button">
+                        <!-- SVG search icon inside search form-->
+                        <svg class="search__icon">
+                            <use href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <!-- Icon box for chats -->
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-bubbles2"></use>
+                        </svg>
+                        <span class="user-nav__notification">4</span>
+                    </div>
+                    <!-- Icon box for mail -->
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <span class="user-nav__notification">12</span>
+                    </div>
+                    <!-- Icon box for likes -->
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </div>
+                    <!-- Box for user information -->
+                    <div class="user-nav__user">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                        <span class="user-nav__user-name">Nay</span>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Div for navigation sidebar and main content -->
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span> Home </span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-fire"></use>
+                                </svg>
+                                <span> Hottest  </span>
+                             </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-compass2"></use>
+                                </svg>
+                                <span> Trending </span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-clock"></use>
+                                </svg>
+                                <span> Newest </span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-loop"></use>
+                                </svg>
+                                <span> Random </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Copyright Text at the end of navigation-->
+                    <div class="legal">
+                        &copy; 2018 by BlogSpot. All rights reserved.
+                    </div>
+                </nav>
+
+                <!-- Main Content area of page-->
+                <main class="content-view">
+                    <div class="banner">
+                        <h1 class="banner__header">
+                            Nay Naing
+                        </h1>
+                        <p class="banner__text">
+                            Welcome to my page
+                        </p>
+                    </div>
+                    <div class="user">
+                        <h1 class="user__info">
+                            "Hardwork betrays none, but dreams betray many.""
+                        </h1>
+                        <div class="user__post-count">120 Posts</div>
+                        <div class="user__follower-count">3,400 Followers</div>
+                        <div class="user__follow-box">
+                            <svg class="user__icon">
+                                <use href="img/sprite.svg#icon-accessibility"></use>
+                            </svg>
+                            <button class="btn-inline"> Follow </button>
+                        </div>
+                    </div>
+                    <!-- Main blog post section-->
+                    <div class="detail">
+                        <div class="blog-post">
+                            <img src="img/popular.jpg" alt="Blog Post Image" class="blog-post__image">
+                            <p class="blog-post__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia rerum possimus libero consequuntur sapiente voluptas, 
+                                ipsam, voluptate porro ducimus tempore nihil obcaecati voluptatibus, sequi quaerat. Sint id distinctio repellendus.
+                            </p>
+                            <div class="activity">
+                                <p class="activity__likes">James and 3 other friends liked this post.</p>
+                                <div class="activity__friends">
+                                    <img src="img/user-1.jpg" alt="Friend 1" class="activity__friends--photos">
+                                    <img src="img/user-2.jpg" alt="Friend 2" class="activity__friends--photos">
+                                    <img src="img/user-3.jpg" alt="Friend 3" class="activity__friends--photos">
+                                    <img src="img/user-4.jpg" alt="Friend 4" class="activity__friends--photos">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Comments section -->
+                        <div class="blog-comments">
+                            <figure class="comment">
+                                <figcaption class="comment__user">
+                                    <img src="img/user-1.jpg" alt="Commenter 1" class="comment__photo">
+                                    <div class="comment__user-box">
+                                        <p class="comment__user-name">Mary Ann</p>
+                                        <p class="comment__user-date">Oct. 24th, 2018</p>
+                                    </div>
+                                </figcaption>
+                                <blockquote class="comment__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit eos porro rem aspernatur ea ullam, in et nobis reiciendis laborum, 
+                                    accusamus perferendis laboriosam fugiat natus commodi quam illum expedita rerum.
+                                </blockquote>
+                            </figure>
+
+                            <figure class="comment">
+                                <figcaption class="comment__user">
+                                    <img src="img/user-3.jpg" alt="Commenter 1" class="comment__photo">
+                                    <div class="comment__user-box">
+                                        <p class="comment__user-name">Josh Lee</p>
+                                        <p class="comment__user-date">Dec. 18th, 2018</p>
+                                        </div>
+                                </figcaption>
+                                <blockquote class="comment__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit eos porro rem aspernatur ea ullam, 
+                                    in et nobis reiciendis laborum, 
+                                </blockquote>
+                            </figure>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
